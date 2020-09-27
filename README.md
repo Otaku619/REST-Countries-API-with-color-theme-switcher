@@ -1,3 +1,7 @@
+#This is a front end project from frontendmentor.io which will be done by me in this repository
+
+##Default Readme below
+
 # Frontend Mentor - REST Countries API with color theme switcher
 
 ![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
