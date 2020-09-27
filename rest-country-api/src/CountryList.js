@@ -66,7 +66,7 @@ export default function CountryList(props) {
       <div className='country_card'>
         {
           countries.map((val, ind) => {
-            if ((val.name.search(regex1) != -1 || val.alpha3Code.search(regex1) != -1 || val.alpha2Code.search(regex1) != -1) && val.region.search(regex2) != -1)
+            if ((val.name.search(regex1) !== -1 || val.alpha3Code.search(regex1) !== -1 || val.alpha2Code.search(regex1) !== -1) && val.region.search(regex2) !== -1)
               return (<CountryCard
                 alpha={val.alpha3Code}
                 key={ind}
