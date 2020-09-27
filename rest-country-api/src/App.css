@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*{
+  font-family:'Nunito Sans', sans-serif;
+}
+.app_light{
+  background-color: hsl(0, 0%, 97%);
+  transition:color 0.4s;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+.app_dark{
+  background-color:hsl(207, 26%, 17%);
+  transition:color 0.4s;
+  min-height:100vh;
+  overflow-x: hidden;
+}
+.app_header{
+  display:flex;
+  justify-content: space-between;
+  height:50px;
+  position:sticky;
+  top:0;
+  padding:1em;
+  align-items:center;
+  transition: 0.4s;
+  z-index:2;
+}    
+.app_header_light{
+  box-shadow:0px 2px 1px hsl(0, 0%, 90%) ;
+  color:hsl(200,15%,8%);
+  background-color:white;
+
+}
+.app_header_dark{
+  box-shadow:0px 2px 1px hsl(209, 23%, 16%);
+  color:white;
+  background-color:hsl(209,23%,22%);
+}
+.header_text{
+  font-weight:800;
+  font-size:1.5rem;
+}
+.toggle_mode{
+  background-color:transparent;
+  border:none;
+  outline:none;
+  font-size:1em;
+  font-weight:600;
+  display:flex;
+  cursor: pointer;
+  padding:8px;
+}
+.toggle_mode i{
+  margin-right:6px;
+  margin-top:3px;
+}
+.toggle_mode_light{
+  color:hsl(200, 15%, 8%);
+}
+.toggle_mode_dark{
+  color:white;
+}
+.toggle_mode_dark:hover{
+  background-color: white;
+  box-shadow:0px 0px 40px white;
+  color:hsl(200, 15%, 8%);
+  transition:0.4s;
+}
+.toggle_mode_light:hover{
+  background-color: black;
+  box-shadow:0px 0px 20px black;
+  color:white;
+  transition:0.4s;
+}
+
+@media only screen and (max-width:400px){
+  .header_text{
+    font-size:4.5vw;
+  }
+  .toggle_mode{
+    font-size:4vw;
+width:40%;
+margin-right:-20px;
+
+  }
+}
