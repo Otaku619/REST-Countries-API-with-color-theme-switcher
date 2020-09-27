@@ -105,17 +105,17 @@ color:white;
 .country_card{
 	display:grid;
 	margin-top:-15px;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 @media only screen and (max-width:1050px){
 	.country_card{
-		grid-template-columns: auto auto auto !important;
+		grid-template-columns: 1fr 1fr 1fr!important;
 	}
 }
 
 @media only screen and (max-width:786px){
 	.country_card{
-		grid-template-columns: auto auto !important;
+		grid-template-columns:1fr 1fr !important;
 	}
 	.filter_text{
 		width:70%;
