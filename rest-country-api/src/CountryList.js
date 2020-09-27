@@ -20,7 +20,7 @@ export default function CountryList(props) {
     'None'
   ]
   const handleListChange = (x) => {
-    if (x != 'None')
+    if (x !== 'None')
       setSelectedRegion([x, 1]);
     else
       setSelectedRegion(['Filter by Region', 0])
@@ -77,7 +77,7 @@ export default function CountryList(props) {
                 region={val.region}
               />)
             else
-              return
+              return (<></>)
           })
         }
       </div>

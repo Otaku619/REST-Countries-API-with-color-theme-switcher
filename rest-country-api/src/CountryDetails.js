@@ -14,6 +14,7 @@ export default function CountryDetails(props) {
         <img
           className='detail_flag'
           src={details.flag}
+          alt="flag"
         />
         <div className={`text_details ${props.mode ? 'text_details_dark' : 'text_details_light'}`}>
           <h1>{details.name}</h1>
@@ -32,7 +33,7 @@ export default function CountryDetails(props) {
             </div>
           </div>
           <div className='neighbours'>
-            <strong>Border Countries: </strong>
+            {details.borders.length ? <strong>Border Countries: </strong> : <></>}
             {
               details.borders.map(val => {
                 return (
