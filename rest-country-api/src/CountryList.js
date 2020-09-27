@@ -28,7 +28,6 @@ export default function CountryList(props) {
   }
   const regex1 = new RegExp(text, "i")
   const regex2 = new RegExp(selectedRegion[1] ? selectedRegion[0] : '', "i")
-  console.log(countries[0].name.search(regex1))
   return (
     <div className='countryList'>
       <div className='filters'>
@@ -42,7 +41,7 @@ export default function CountryList(props) {
         <div className={`filter_region ${props.mode ? 'filter_region_dark' : 'filter_region_light'}`}>
           <div className={`selected ${props.mode ? 'selected_dark' : 'selected_light'}`}
             onClick={() => setToggleList(!toggleList)}>
-            {selectedRegion[0]} <span>&#x2304;</span>
+            {selectedRegion[0]} <span style={toggleList ? {transform: 'rotateZ(180deg) translateY(-5px)'} : {}}>&#x2304;</span>
           </div>
           <div className={`filter_region_list ${props.mode ? 'filter_region_list_dark' : 'filter_region_list_light'}`}
             style={toggleListStyle}

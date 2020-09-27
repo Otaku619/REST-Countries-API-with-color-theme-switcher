@@ -1,9 +1,6 @@
-a{
-  text-decoration: none;
-}
 .card{
   transition:0.4s;
-  width:250px;
+  width:260px;
   min-height: 330px;
   border-radius:10px;
   margin-top:50px;
@@ -15,22 +12,26 @@ a{
 }
 .card_dark:hover{
 	background:hsl(200, 20%, 30%);
+	border:solid 10px white;
 }
 .card_light:hover{
 	background:hsl(0, 0%, 90%);
+	border:solid 10px hsl(209,23%,22%);
   }
   .flag_parent,.flag{
-	  border-radius: 10px 10px 0 0;
-	  width:100%;
+	  width:260px;
 	  height:100%;
+	  transition: 0.4s;
   }
 .card_dark{
  background:hsl(209, 23%, 22%);
  color:white;
+ border:solid 8px hsl(209,23%,20%);
 }
 .card_light{
   background:white;
   color:hsl(200,15%,8%);
+  border: solid 8px hsl(0,0%,90%);
 }
 .data{
   padding:20px;
@@ -50,40 +51,46 @@ a{
 	font-size:0.7em;
 }
 @media only screen and (max-width:1250px){
-  .card{
-    width:220px;
-  }
-  }
+  .card,.flag,.flag_parent{
+    width:210px;
+  
+  }}
 @media only screen and (max-width:1050px){
-  .card{
-    width:250px;
+  .card,.flag,.flag_parent{
+    width:260px;
   }
 }
 @media only screen and (max-width:945px){
-  .card{
-    width:220px;
+  .card,.flag,.flag_parent{
+    width:210px;
   }
 }
 @media only screen and (max-width:786px){
-  .card{
-    width:250px;
+  .card,.flag,.flag_parent{
+    width:260px;
   }
 }
 @media only screen and (max-width:786px){
-  .card{
-    width:220px;
+  .card,.flag,.flag_parent{
+    width:210px;
   }
 }
 
 @media only screen and (max-width:520px){
   .card{
-    width:250px;
+    width:260px;
     margin: auto;
     margin-top:50px;
+  }
+  .flag,.flag_parent{
+	  width:260px;
   }
 }
 @media only screen and (max-width:300px){
   .card{
     width:90%;
+  }
+  .flag,.flag_parent{
+	  width:100%;
   }
 }
