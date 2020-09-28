@@ -8,7 +8,7 @@ export default function countryCard(props) {
         onClick={() => window.location = `/${props.alpha}`}
       >
         <svg className="flag_parent">
-          <image preserveAspectRatio="none" xlinkHref={props.flag} className="flag" />
+          <image preserveAspectRatio="none" xlinkHref={props.flag} className="flag" width="auto" height="auto"/>
         </svg>
         <div className="data">
           <h2 style={{fontSize: props.name.length > 15 ? '0.8em' : '1.2em'}}>{props.name}</h2>
