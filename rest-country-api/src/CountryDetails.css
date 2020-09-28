@@ -36,6 +36,7 @@ color:white;
 .detail_flag{
   width:500px;
   object-fit: contain;
+	max-height:300px;
 }
 .text_details{
   margin-top: 20px;
